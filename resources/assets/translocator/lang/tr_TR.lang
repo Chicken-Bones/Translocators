@@ -1,0 +1,6 @@
+tile.translocator|0.name=Item Taşıyıcı
+tile.translocator|1.name=Sıvı Taşıyıcı
+item.translocator:diamondNugget.name=Elmas Parçası
+
+translocator.regulate=Düzenleme
+translocator.filter=Filtre

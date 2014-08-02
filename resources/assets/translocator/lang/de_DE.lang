@@ -1,0 +1,6 @@
+﻿tile.translocator|0.name=Item-Translokator
+tile.translocator|1.name=Flüssigkeiten-Translokator
+item.translocator:diamondNugget.name=Diamantnugget
+
+translocator.regulate=Regulieren
+translocator.filter=Filter

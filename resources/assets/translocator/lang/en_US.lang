@@ -1,0 +1,8 @@
+tile.translocator|0.name=Item Translocator
+tile.translocator|1.name=Liquid Translocator
+item.translocator:diamondNugget.name=Diamond Nugget
+
+translocator.regulate=Regulate
+translocator.filter=Filter
+
+key.craftingGrid=Crafting Grid
