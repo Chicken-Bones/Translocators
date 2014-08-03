@@ -1,0 +1,8 @@
+tile.translocator|0.name=Translocatore di oggetti
+tile.translocator|1.name=Translocatore di liquidi
+item.translocator:diamondNugget.name=Pepita di diamante
+
+translocator.regulate=Regolatore
+translocator.filter=Filtro
+
+key.craftingGrid=Griglia di fabbricazione
