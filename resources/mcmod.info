@@ -1,4 +1,4 @@
-﻿[
+[
 {
   "modid": "Translocator",
   "name": "Translocator",
@@ -6,7 +6,7 @@
   
 Credits: MouseCop - Textures
 
-§bSupporters:",
+Supporters:",
   "version": "${version}",
   "mcversion": "${mc_version}",
   "url": "http://www.minecraftforum.net/topic/909223",

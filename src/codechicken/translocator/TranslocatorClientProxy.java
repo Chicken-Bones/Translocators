@@ -1,6 +1,6 @@
 package codechicken.translocator;
 
-import codechicken.core.GuiModListScroll;
+import codechicken.core.ClientUtils;
 import cpw.mods.fml.common.FMLCommonHandler;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
@@ -16,10 +16,10 @@ public class TranslocatorClientProxy extends TranslocatorProxy
     {
         if(config.getTag("checkUpdates").getBooleanValue(true))
             CCUpdateChecker.updateCheck("Translocator");
+        ClientUtils.enhanceSupportersList("Translocator");
         
         super.init();
 
-        GuiModListScroll.register("Translocator");
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileItemTranslocator.class, new TileTranslocatorRenderer());
         ClientRegistry.bindTileEntitySpecialRenderer(TileLiquidTranslocator.class, new TileTranslocatorRenderer());
