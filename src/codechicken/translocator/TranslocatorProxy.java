@@ -23,13 +23,13 @@ public class TranslocatorProxy
         itemDiamondNugget = new Item()
                 .setUnlocalizedName("translocator:diamondNugget").setTextureName("translocator:diamondNugget")
                 .setCreativeTab(CreativeTabs.tabMaterials);
+        GameRegistry.registerItem(itemDiamondNugget, "diamondNugget");
+        OreDictionary.registerOre("diamondNugget", itemDiamondNugget);
 
         GameRegistry.registerBlock(blockTranslocator, ItemTranslocator.class, "translocator");
         GameRegistry.registerBlock(blockCraftingGrid, "craftingGrid");
         MinecraftForge.EVENT_BUS.register(blockTranslocator);
         MinecraftForge.EVENT_BUS.register(blockCraftingGrid);
-
-        OreDictionary.registerOre("diamondNugget", itemDiamondNugget);
 
         GameRegistry.registerTileEntity(TileItemTranslocator.class, "itemTranslocator");
         GameRegistry.registerTileEntity(TileLiquidTranslocator.class, "liquidTranslocator");
