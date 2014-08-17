@@ -1,8 +1,10 @@
 #zh_CN
 
-tile.translocator|0.name=ÎïÆ·×ªÔËÆ÷
-tile.translocator|1.name=ÒºÌå×ªÔËÆ÷
-item.translocator:diamondNugget.name=×êÊ¯Á£
+tile.translocator|0.name=ç‰©å“è½¬è¿å™¨
+tile.translocator|1.name=æ¶²ä½“è½¬è¿å™¨
+item.translocator:diamondNugget.name=é’»çŸ³ç²’
 
-translocator.regulate=µ÷¿Ø
-translocator.filter=¹ıÂË
+translocator.regulate=è°ƒæ§
+translocator.filter=è¿‡æ»¤
+
+key.craftingGrid=åˆæˆæ ¼
