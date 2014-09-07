@@ -14,7 +14,9 @@ import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = "Translocator", dependencies = "required-after:CodeChickenCore@[" + CodeChickenCorePlugin.version + ",)", acceptedMinecraftVersions = CodeChickenCorePlugin.mcVersion)
+@Mod(modid = "Translocator",
+        dependencies = "required-after:CodeChickenCore@[" + CodeChickenCorePlugin.version + ",);required-after:NotEnoughItems",
+        acceptedMinecraftVersions = CodeChickenCorePlugin.mcVersion)
 public class Translocator
 {
     @SidedProxy(clientSide = "codechicken.translocator.TranslocatorClientProxy", serverSide = "codechicken.translocator.TranslocatorProxy")
