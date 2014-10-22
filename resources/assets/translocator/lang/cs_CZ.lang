@@ -1,0 +1,8 @@
+tile.translocator|0.name=Přemisťovač předmětů
+tile.translocator|1.name=Přemisťovač tekutin
+item.translocator:diamondNugget.name=Diamantová hrudka
+
+translocator.regulate=Relugovat
+translocator.filter=Filtr
+
+key.craftingGrid=Výrobní rámeček
