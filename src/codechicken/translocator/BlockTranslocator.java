@@ -118,6 +118,11 @@ public class BlockTranslocator extends Block
     }
 
     @Override
+    public int damageDropped(int meta) {
+        return meta;
+    }
+
+    @Override
     public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int md, int fortune) {
         ArrayList<ItemStack> ai = new ArrayList<ItemStack>();
         if (world.isRemote)

@@ -16,9 +16,10 @@ import net.minecraft.util.MovingObjectPosition;
 
 public class CraftingGridKeyHandler extends KeyBinding
 {
+    public static final CraftingGridKeyHandler instance = new CraftingGridKeyHandler();
     private boolean wasPressed = false;
 
-    public CraftingGridKeyHandler() {
+    private CraftingGridKeyHandler() {
         super("key.craftingGrid", Keyboard.KEY_C, "key.categories.gameplay");
     }
 

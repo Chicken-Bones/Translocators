@@ -29,7 +29,7 @@ public class TranslocatorClientProxy extends TranslocatorProxy
         
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(blockTranslocator), new ItemTranslocatorRenderer());
 
-        FMLCommonHandler.instance().bus().register(new CraftingGridKeyHandler());
-        ClientRegistry.registerKeyBinding(new CraftingGridKeyHandler());
+        FMLCommonHandler.instance().bus().register(CraftingGridKeyHandler.instance);
+        ClientRegistry.registerKeyBinding(CraftingGridKeyHandler.instance);
     }
 }

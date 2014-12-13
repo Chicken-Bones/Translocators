@@ -1,5 +1,6 @@
 package codechicken.translocator;
 
+import codechicken.nei.api.API;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -55,6 +56,7 @@ public class TranslocatorProxy
                 'i', Items.iron_ingot,
                 'l', new ItemStack(Items.dye, 1, 4),
                 'p', Blocks.piston);
+        API.hideItem(new ItemStack(blockCraftingGrid));
 
         GameRegistry.addShapelessRecipe(new ItemStack(Items.diamond),
                 itemDiamondNugget, itemDiamondNugget, itemDiamondNugget,

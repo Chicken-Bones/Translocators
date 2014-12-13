@@ -151,36 +151,23 @@ public class BlockCraftingGrid extends Block
 
     public boolean placeBlock(World world, EntityPlayer player, int x, int y, int z, int side) {
         Block block = world.getBlock(x, y, z);
-        if (block == Blocks.snow) {
-            side = 1;
-        } else if (block != Blocks.vine && block != Blocks.tallgrass && block != Blocks.deadbush
-                && block.isReplaceable(world, x, y, z)) {
-            if (side == 0)
-                --y;
-            if (side == 1)
-                ++y;
-            if (side == 2)
-                --z;
-            if (side == 3)
-                ++z;
-            if (side == 4)
-                --x;
-            if (side == 5)
-                ++x;
-        }
-
-        if (side != 1)
+        if(side != 1 && block != Blocks.snow_layer)
             return false;
 
-        BlockCoord beneath = new BlockCoord(x, y, z).offset(0);
-        if (!world.isSideSolid(beneath.x, beneath.y, beneath.z, ForgeDirection.UP))
+        if (block != Blocks.vine && block != Blocks.tallgrass && block != Blocks.deadbush
+                && !block.isReplaceable(world, x, y, z))
+            y++;
+
+        if (!world.isSideSolid(x, y-1, z, ForgeDirection.UP))
             return false;
 
-        if (!world.canPlaceEntityOnSide(block, x, y, z, false, side, null, null))
+        if (!world.canPlaceEntityOnSide(this, x, y, z, false, 1, null, null))
             return false;
 
         player.swingItem();
-        world.setBlock(x, y, z, block);
+        if(!world.setBlock(x, y, z, this))
+            return false;
+
         onBlockPlacedBy(world, x, y, z, player, null);
         return true;
     }
