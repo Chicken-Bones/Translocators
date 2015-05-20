@@ -25,7 +25,7 @@ public class TranslocatorProxy
                 .setUnlocalizedName("translocator:diamondNugget").setTextureName("translocator:diamondNugget")
                 .setCreativeTab(CreativeTabs.tabMaterials);
         GameRegistry.registerItem(itemDiamondNugget, "diamondNugget");
-        OreDictionary.registerOre("diamondNugget", itemDiamondNugget);
+        OreDictionary.registerOre("nuggetDiamond", itemDiamondNugget);
 
         GameRegistry.registerBlock(blockTranslocator, ItemTranslocator.class, "translocator");
         GameRegistry.registerBlock(blockCraftingGrid, "craftingGrid");
