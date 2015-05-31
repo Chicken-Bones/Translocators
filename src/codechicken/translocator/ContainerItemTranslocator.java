@@ -6,9 +6,9 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
-import codechicken.core.inventory.ContainerExtended;
+import codechicken.lib.inventory.ContainerExtended;
 import codechicken.lib.inventory.InventorySimple;
-import codechicken.core.inventory.SlotDummy;
+import codechicken.lib.inventory.SlotDummy;
 import codechicken.lib.packet.PacketCustom;
 
 public class ContainerItemTranslocator extends ContainerExtended
