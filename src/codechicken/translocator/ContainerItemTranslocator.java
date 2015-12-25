@@ -5,6 +5,7 @@ import java.util.List;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import codechicken.lib.inventory.ContainerExtended;
 import codechicken.lib.inventory.InventorySimple;
@@ -23,6 +24,11 @@ public class ContainerItemTranslocator extends ContainerExtended
                 this.addSlotToContainer(new SlotDummy(inv, y + x * 3, 62 + y * 18, 17 + x * 18, inv.limit));
 
         bindPlayerInventory(playerInv);
+    }
+
+    @Override
+    public boolean func_94530_a(ItemStack stack, Slot slot) {
+        return !(slot instanceof SlotDummy);
     }
 
     public String getInvName() {
