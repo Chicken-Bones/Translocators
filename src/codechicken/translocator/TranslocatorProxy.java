@@ -19,6 +19,7 @@ public class TranslocatorProxy
         blockTranslocator = new BlockTranslocator();
         blockTranslocator.setBlockName("translocator").setCreativeTab(CreativeTabs.tabRedstone);
         blockCraftingGrid = new BlockCraftingGrid();
+        blockCraftingGrid.setBlockName("craftingGrid");
         blockCraftingGrid.setBlockTextureName("planks_oak");
 
         itemDiamondNugget = new Item()
