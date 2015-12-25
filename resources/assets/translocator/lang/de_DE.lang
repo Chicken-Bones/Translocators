@@ -1,5 +1,6 @@
 ﻿tile.translocator|0.name=Item-Translokator
 tile.translocator|1.name=Flüssigkeiten-Translokator
+tile.craftingGrid.name=Crafting-Feld
 item.translocator:diamondNugget.name=Diamantnugget
 
 translocator.regulate=Regulieren

@@ -1,5 +1,6 @@
 ﻿tile.translocator|0.name=物品轉運器
 tile.translocator|1.name=液體轉運器
+tile.craftingGrid.name=過濾器
 item.translocator:diamondNugget.name=鑽石粒
 
 translocator.regulate=調節

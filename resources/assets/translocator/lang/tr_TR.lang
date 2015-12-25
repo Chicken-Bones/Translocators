@@ -1,5 +1,6 @@
 tile.translocator|0.name=Item Taşıyıcı
 tile.translocator|1.name=Sıvı Taşıyıcı
+tile.craftingGrid.name=Üretim Izgarası
 item.translocator:diamondNugget.name=Elmas Parçası
 
 translocator.regulate=Düzenleme
