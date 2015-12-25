@@ -1,0 +1,9 @@
+tile.translocator|0.name=Translocador de Itens
+tile.translocator|1.name=Translocador de Líquidos
+tile.craftingGrid.name=Grade de Trabalho
+item.translocator:diamondNugget.name=Pepita de Diamante
+
+translocator.regulate=Regular
+translocator.filter=Filtrar
+
+key.craftingGrid=Grade de Trabalho
