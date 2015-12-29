@@ -30,6 +30,7 @@ public class Translocator
     public static BlockTranslocator blockTranslocator;
     public static BlockCraftingGrid blockCraftingGrid;
     public static Item itemDiamondNugget;
+    public static boolean disableCraftingGridKey;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -38,6 +39,7 @@ public class Translocator
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
+        disableCraftingGridKey = config.getTag("disable-crafting-grid-key").setComment("Set to true to disable placement of crafting grids by keyboard shortcut.").getBooleanValue(false);
         proxy.init();
     }
 }

@@ -33,6 +33,7 @@ import net.minecraftforge.client.event.DrawBlockHighlightEvent;
 import net.minecraftforge.common.util.ForgeDirection;
 
 import static codechicken.lib.vec.Vector3.*;
+import static codechicken.translocator.Translocator.disableCraftingGridKey;
 
 public class BlockCraftingGrid extends Block
 {
@@ -150,6 +151,9 @@ public class BlockCraftingGrid extends Block
     }
 
     public boolean placeBlock(World world, EntityPlayer player, int x, int y, int z, int side) {
+        if(disableCraftingGridKey)
+            return false;
+
         Block block = world.getBlock(x, y, z);
         if(side != 1 && block != Blocks.snow_layer)
             return false;
